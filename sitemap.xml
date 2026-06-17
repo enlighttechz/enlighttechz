@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://enlighttechz.in/</loc>
+    <lastmod>2026-05-12</lastmod>
+    <priority>1.00</priority>
+    <image:image>
+      <image:loc>https://enlighttechz.in/img/ET.png</image:loc>
+      <image:title>Enlight Techz Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://enlighttechz.in/services.html</loc>
+    <lastmod>2026-05-12</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://enlighttechz.in/portfolio.html</loc>
+    <lastmod>2026-05-12</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://enlighttechz.in/about.html</loc>
+    <lastmod>2026-05-12</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://enlighttechz.in/contact.html</loc>
+    <lastmod>2026-05-12</lastmod>
+    <priority>0.90</priority>
+  </url>
+</urlset>

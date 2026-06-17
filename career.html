@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | Enlight Techz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .career-card {
+            background: var(--bg-card);
+            padding: 30px;
+            border-radius: 24px;
+            border: 1px solid var(--glass-border);
+            margin-bottom: 30px;
+        }
+        .apply-btn {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="img/ET.png" alt="Enlight Techz Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="btn btn-primary" style="margin-left: 20px;">Get Started</a></li>
+                
+            </ul>
+            <div class="menu-btn"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <section class="section-padding" style="margin-top: 80px;">
+        <div class="container">
+            <div class="section-title">
+                <h1 class="text-gradient">Join Our Team</h1>
+                <p>Build the future of technology with Enlight Techz.</p>
+            </div>
+
+            <div class="career-section">
+                <h2 class="text-gradient" style="margin-bottom: 30px;">Current Job Openings</h2>
+                <div class="career-card" data-reveal>
+                    <h3>Full Stack Developer</h3>
+                    <p >Karaikal, Puducherry | Full-Time</p>
+                    <p style="margin-top: 15px;">We are looking for a skilled developer with experience in React, Node.js, and MongoDB.</p>
+                    <a href="#apply-form" class="btn btn-primary apply-btn">Apply Now</a>
+                </div>
+                <div class="career-card" data-reveal>
+                    <h3>Digital Marketing Specialist</h3>
+                    <p >Karaikal, Puducherry | Full-Time</p>
+                    <p style="margin-top: 15px;">Join us to lead our client campaigns across SMM, SEO, and AEO.</p>
+                    <a href="#apply-form" class="btn btn-primary apply-btn">Apply Now</a>
+                </div>
+            </div>
+
+            <div class="career-section" style="margin-top: 60px;" id="apply-form">
+                <h2 class="text-gradient" style="margin-bottom: 30px;">Apply Now</h2>
+                <div class="career-form" style="background: var(--bg-card); padding: 40px; border-radius: 32px; border: 1px solid var(--glass-border);">
+                    <form action="#">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                <input type="text" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="text" name="phone" placeholder="Your Phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Applying For</label>
+                                <select name="position">
+                                    <option value="Full Stack Developer">Full Stack Developer</option>
+                                    <option value="Digital Marketing Specialist">Digital Marketing Specialist</option>
+                                    <option value="Web Dev Intern">Web Dev Intern</option>
+                                    <option value="Marketing Intern">Marketing Intern</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Application Type</label>
+                                <select name="type">
+                                    <option value="Job">Full-Time Job</option>
+                                    <option value="Internship">Internship</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin-top: 20px;">
+                            <label>Tell us about yourself / Portfolio Link</label>
+                            <textarea name="message" rows="5" placeholder="Share your experience or links to your work" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Application</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="padding: 80px 0 30px; border-top: 1px solid var(--glass-border);">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 60px;">
+                <div>
+                    <img src="img/ET.png" alt="Enlight Techz Logo" style="height: 40px; margin-bottom: 20px;">
+                    <p >Enlight Techz. Illuminating your digital presence with innovative IT solutions.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul style="list-style: none; margin-top: 20px;">
+                        <li style="margin-bottom: 10px;"><a href="index.html" >Home</a></li>
+                        <li style="margin-bottom: 10px;"><a href="services.html" >Services</a></li>
+                        <li style="margin-bottom: 10px;"><a href="portfolio.html" >Portfolio</a></li>
+                        <li style="margin-bottom: 10px;"><a href="career.html" >Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Legal & Policies</h4>
+                    <ul style="list-style: none; margin-top: 20px;">
+                        <li style="margin-bottom: 10px;"><a href="privacy-policy.html" >Privacy Policy</a></li>
+                        <li style="margin-bottom: 10px;"><a href="payment-policy.html" >Payment Policy</a></li>
+                        <li style="margin-bottom: 10px;"><a href="terms-and-conditions.html" >Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact Us</h4>
+                    <p style="color: var(--text-dim); margin-top: 20px;"><i class="fas fa-envelope" style="color: var(--primary); margin-right: 10px;"></i> enlighttechz@gmail.com</p>
+                    <p style="color: var(--text-dim); margin-top: 10px;"><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 10px;"></i> Karaikal, Puducherry.</p>
+                    <div style="display: flex; gap: 15px; margin-top: 20px;">
+                        <a href="#" style="color: var(--text-dim); font-size: 1.2rem;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="color: var(--text-dim); font-size: 1.2rem;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: var(--text-dim); font-size: 1.2rem;"><i class="fab fa-youtube"></i></a>
+                        <a href="#" style="color: var(--text-dim); font-size: 1.2rem;"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; padding-top: 30px; border-top: 1px solid var(--glass-border); color: var(--text-dim); font-size: 0.9rem;">
+                <p>&copy; 2026 Enlight Techz. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+        <!-- Chatbot FAB -->
+    <div class="chat-fab" id="chat-fab">
+        <div class="chat-tooltip">How can I help you?</div>
+        <i class="fas fa-comment-dots"></i>
+    </div>
+
+    <!-- Chat Window -->
+    <div class="chat-window" id="chat-window">
+        <div class="chat-header">
+            <div class="chat-title">
+                <img src="img/ET.png" alt="ET Logo" style="height: 25px;">
+                <span>ET Assistant</span>
+            </div>
+            <div class="chat-close" id="chat-close"><i class="fas fa-times"></i></div>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <div class="chat-message bot">
+                Hello! I'm your Enlight Techz assistant. How can I help you today?
+            </div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="chat-input" placeholder="Type your message...">
+            <button id="chat-send"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

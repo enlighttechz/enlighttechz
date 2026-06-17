@@ -1,0 +1,10 @@
+node_modules
+Backup
+.env
+.DS_Store
+*.log
+.vscode
+.idea
+
+# Dependencies folder
+dist
