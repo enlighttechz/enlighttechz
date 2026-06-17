@@ -12,6 +12,32 @@
 </head>
 <body>
 
+    <!-- Topbar Ticker -->
+    <div class="topbar">
+        <div class="topbar-track">
+            <span class="topbar-item"><i class="fas fa-trophy"></i> Leading IT Company</span>
+            <span class="topbar-separator"></span>
+            <span class="topbar-item"><i class="fas fa-map-marked-alt"></i> Pondicherry & Karaikal</span>
+            <span class="topbar-separator"></span>
+            <span class="topbar-item"><i class="fas fa-user-tie"></i> Qualified Engineers</span>
+            <span class="topbar-separator"></span>
+            <span class="topbar-item"><i class="fas fa-hand-holding-usd"></i> Custom Budget Solutions</span>
+            <span class="topbar-separator"></span>
+            <span class="topbar-item"><i class="fas fa-comments"></i> Free Consultation</span>
+            <span class="topbar-separator"></span>
+            <span class="topbar-item"><i class="fas fa-trophy"></i> Leading IT Company</span>
+            <span class="topbar-separator"></span>
+            <span class="topbar-item"><i class="fas fa-map-marked-alt"></i> Pondicherry & Karaikal</span>
+            <span class="topbar-separator"></span>
+            <span class="topbar-item"><i class="fas fa-user-tie"></i> Qualified Engineers</span>
+            <span class="topbar-separator"></span>
+            <span class="topbar-item"><i class="fas fa-hand-holding-usd"></i> Custom Budget Solutions</span>
+            <span class="topbar-separator"></span>
+            <span class="topbar-item"><i class="fas fa-comments"></i> Free Consultation</span>
+            <span class="topbar-separator"></span>
+        </div>
+    </div>
+
     <nav id="navbar">
         <div class="container">
             <div class="logo">
@@ -65,6 +91,12 @@
                             <input type="email" name="email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Your Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="company" placeholder="Company/Brand Name (Optional)">
+                        </div>
+                        <div class="form-group">
                             <select name="service" id="service-select">
                                 <option value="General Inquiry">General Inquiry</option>
                                 <option value="Mobile App Development">Mobile App Development</option>
@@ -88,7 +120,13 @@
                         <div class="form-group">
                             <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                        <div class="form-group checkbox-group" style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 20px;">
+                            <input type="checkbox" name="terms" id="terms-checkbox" required style="margin-top: 5px;">
+                            <label for="terms-checkbox" style="color: var(--text-dim); font-size: 0.9rem; line-height: 1.5;">
+                                I accept the <a href="terms-and-conditions.html" style="color: var(--primary); text-decoration: none;">Terms & Conditions</a> and <a href="privacy-policy.html" style="color: var(--primary); text-decoration: none;">Privacy Policy</a>.
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit</button>
                     </form>
                 </div>
             </div>
@@ -124,10 +162,10 @@
                     <p style="color: var(--text-dim); margin-top: 20px;"><i class="fas fa-envelope" style="color: var(--primary); margin-right: 10px;"></i> enlighttechz@gmail.com</p>
                     <p style="color: var(--text-dim); margin-top: 10px;"><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 10px;"></i> Karaikal, Puducherry.</p>
                     <div style="display: flex; gap: 15px; margin-top: 20px;">
-                        <a href="#" style="color: var(--text-dim); font-size: 1.2rem;"><i class="fab fa-instagram"></i></a>
-                        <a href="#" style="color: var(--text-dim); font-size: 1.2rem;"><i class="fab fa-facebook"></i></a>
-                        <a href="#" style="color: var(--text-dim); font-size: 1.2rem;"><i class="fab fa-youtube"></i></a>
-                        <a href="#" style="color: var(--text-dim); font-size: 1.2rem;"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/enlighttechz" style="color: var(--text-dim); font-size: 1.2rem;"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/enlighttechz" style="color: var(--text-dim); font-size: 1.2rem;"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/enlighttechz" style="color: var(--text-dim); font-size: 1.2rem;"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/enlighttechz" style="color: var(--text-dim); font-size: 1.2rem;"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>

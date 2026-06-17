@@ -10,7 +10,7 @@ document.body.appendChild(follower);
 document.addEventListener('mousemove', (e) => {
     cursor.style.left = e.clientX + 'px';
     cursor.style.top = e.clientY + 'px';
-    
+
     setTimeout(() => {
         follower.style.left = e.clientX + 'px';
         follower.style.top = e.clientY + 'px';
@@ -86,7 +86,7 @@ revealOnScroll();
 const handleFormSubmission = (form, apiPath) => {
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
-        
+
         const submitBtn = form.querySelector('button');
         const originalText = submitBtn.innerText;
         submitBtn.innerText = 'Sending...';
@@ -136,10 +136,10 @@ faqItems.forEach(item => {
     const question = item.querySelector('.faq-question');
     question.addEventListener('click', () => {
         const isActive = item.classList.contains('active');
-        
+
         // Close all other items
         faqItems.forEach(i => i.classList.remove('active'));
-        
+
         // Toggle current item
         if (!isActive) {
             item.classList.add('active');
@@ -174,7 +174,7 @@ if (chatClose) chatClose.addEventListener('click', toggleChat);
 
 const formatMessage = (text) => {
     if (!text) return "";
-    
+
     // Escape HTML to prevent XSS
     let formatted = text
         .replace(/&/g, "&amp;")
@@ -182,16 +182,16 @@ const formatMessage = (text) => {
         .replace(/>/g, "&gt;")
         .replace(/"/g, "&quot;")
         .replace(/'/g, "&#039;");
-    
+
     // Replace **text** with <strong>text</strong>
     formatted = formatted.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-    
+
     // Replace * or - used as list markers with bullet points
     formatted = formatted.replace(/^\s*[\*\-]\s+/gm, '• ');
-    
+
     // Clean up any remaining single asterisks that might be left from italics or poorly formatted lists
     formatted = formatted.replace(/ \*/g, ' •').replace(/\* /g, '• ');
-    
+
     // Finally remove any stray single asterisks
     formatted = formatted.replace(/\*/g, '');
 
@@ -228,7 +228,7 @@ const sendMessage = async () => {
             body: JSON.stringify({ message, sessionId })
         });
         const data = await response.json();
-        
+
         chatBody.removeChild(typingDiv);
         if (data.success) {
             appendMessage(data.response, 'bot');
@@ -250,11 +250,11 @@ chatInput.addEventListener('keypress', (e) => {
 window.addEventListener('load', () => {
     const urlParams = new URLSearchParams(window.location.search);
     let serviceParam = urlParams.get('service');
-    
+
     if (serviceParam) {
         serviceParam = decodeURIComponent(serviceParam).trim();
         const serviceSelect = document.getElementById('service-select');
-        
+
         if (serviceSelect) {
             setTimeout(() => {
                 let found = false;
@@ -265,7 +265,7 @@ window.addEventListener('load', () => {
                         found = true;
                     }
                 });
-                
+
                 // Fallback to partial match
                 if (!found) {
                     Array.from(serviceSelect.options).forEach(option => {
@@ -275,15 +275,19 @@ window.addEventListener('load', () => {
                     });
                 }
                 serviceSelect.dispatchEvent(new Event('change'));
+                const contactForm = document.querySelector('.contact-form');
+                if (contactForm) {
+                    contactForm.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
             }, 200); // Increased timeout slightly
         }
     }
-    
+
     // Dynamically load Services and Packages if available in DB
     fetch('/api/admin/services').then(res => res.json()).then(data => {
-        if(data && data.length > 0) {
+        if (data && data.length > 0) {
             const grid = document.querySelector('.services-grid');
-            if(grid) {
+            if (grid) {
                 grid.innerHTML = data.map(s => `
                     <div class="service-card" data-reveal>
                         <i class="${s.icon} fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
@@ -298,13 +302,13 @@ window.addEventListener('load', () => {
     }).catch(e => console.log('Static services fallback.'));
 
     fetch('/api/admin/packages').then(res => res.json()).then(data => {
-        if(data && data.length > 0) {
+        if (data && data.length > 0) {
             const packageSection = document.getElementById('packages');
-            if(packageSection) {
+            if (packageSection) {
                 // Group by category
                 const categories = [...new Set(data.map(p => p.category))];
                 let html = '<div class="container"><div class="section-title" style="text-align: center; margin-bottom: 50px;"><h2 class="text-gradient">Packages Starting From</h2><p>Choose the right plan to bring your ideas to life.</p></div>';
-                
+
                 categories.forEach(cat => {
                     html += `<div style="text-align: center; margin-top: 40px; margin-bottom: 30px;"><h3 style="font-size: 1.8rem; margin-bottom: 10px;">${cat}</h3></div><div class="pricing-grid">`;
                     const pkgs = data.filter(p => p.category === cat);

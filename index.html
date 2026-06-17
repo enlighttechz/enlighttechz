@@ -12,6 +12,32 @@
 </head>
 <body>
 
+    <!-- Topbar Ticker -->
+    <div class="topbar">
+        <div class="topbar-track">
+            <span class="topbar-item"><i class="fas fa-trophy"></i> Leading IT Company</span>
+            <span class="topbar-separator"></span>
+            <span class="topbar-item"><i class="fas fa-map-marked-alt"></i> Pondicherry & Karaikal</span>
+            <span class="topbar-separator"></span>
+            <span class="topbar-item"><i class="fas fa-user-tie"></i> Qualified Engineers</span>
+            <span class="topbar-separator"></span>
+            <span class="topbar-item"><i class="fas fa-hand-holding-usd"></i> Custom Budget Solutions</span>
+            <span class="topbar-separator"></span>
+            <span class="topbar-item"><i class="fas fa-comments"></i> Free Consultation</span>
+            <span class="topbar-separator"></span>
+            <span class="topbar-item"><i class="fas fa-trophy"></i> Leading IT Company</span>
+            <span class="topbar-separator"></span>
+            <span class="topbar-item"><i class="fas fa-map-marked-alt"></i> Pondicherry & Karaikal</span>
+            <span class="topbar-separator"></span>
+            <span class="topbar-item"><i class="fas fa-user-tie"></i> Qualified Engineers</span>
+            <span class="topbar-separator"></span>
+            <span class="topbar-item"><i class="fas fa-hand-holding-usd"></i> Custom Budget Solutions</span>
+            <span class="topbar-separator"></span>
+            <span class="topbar-item"><i class="fas fa-comments"></i> Free Consultation</span>
+            <span class="topbar-separator"></span>
+        </div>
+    </div>
+
     <nav id="navbar">
         <div class="container">
             <div class="logo">
@@ -31,9 +57,15 @@
     </nav>
 
     <section class="hero" id="home">
-        <div class="container">
+        <!-- Hero Background Video -->
+        <!-- <video autoplay loop muted playsinline class="hero-video">
+            <source src="professional-programmer.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div> -->
+        <div class="container" style="position: relative; z-index: 2;">
             <div class="hero-content" style="text-align: center; margin: 0 auto; max-width: 800px;">
-                <h1 data-reveal>Transform Your Digital Presence <span class="text-gradient">Enlight Techz</span></h1>
+                <h1 data-reveal>Transform Your Digital Presence with <span class="text-gradient">Enlight Techz</span></h1>
                 <p data-reveal>High-performance solutions for modern brands. We specialize in App Development, Web Solutions, and AI-Driven SEO.</p>
                 <div class="hero-btns" data-reveal>
                     <a href="contact.html" class="btn btn-primary">Start Your Journey</a>
@@ -49,31 +81,60 @@
                 <h2 class="text-gradient" data-reveal>Why Choose Us?</h2>
                 <p data-reveal>Partner with the best for your digital transformation.</p>
             </div>
-            <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
-                <div class="service-card" data-reveal>
-                    <i class="fas fa-trophy fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
-                    <h3>No.1 IT Company</h3>
-                    <p style="margin-top: 10px; color: var(--text-dim); line-height: 1.6;">Recognized as the leading IT solutions provider in the region, delivering unparalleled digital services with a proven track record of client success and technological excellence.</p>
-                </div>
-                <div class="service-card" data-reveal>
-                    <i class="fas fa-map-marked-alt fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
-                    <h3>Location</h3>
-                    <p style="margin-top: 10px; color: var(--text-dim); line-height: 1.6;">Strategically situated across Pondicherry and Karaikal, ensuring accessible, responsive, and reliable local support for all your business needs.</p>
-                </div>
-                <div class="service-card" data-reveal>
-                    <i class="fas fa-user-tie fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
-                    <h3>Qualified Engineers</h3>
-                    <p style="margin-top: 10px; color: var(--text-dim); line-height: 1.6;">Our team comprises top-tier industry experts and passionate engineers dedicated to building robust, innovative, and future-proof digital solutions.</p>
-                </div>
-                <div class="service-card" data-reveal>
-                    <i class="fas fa-hand-holding-usd fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
-                    <h3>Custom Budget</h3>
-                    <p style="margin-top: 10px; color: var(--text-dim); line-height: 1.6;">We offer tailored, transparent pricing models designed to perfectly fit your unique business requirements without compromising on quality or performance.</p>
-                </div>
-                <div class="service-card" data-reveal>
-                    <i class="fas fa-comments fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
-                    <h3>Free Consultation</h3>
-                    <p style="margin-top: 10px; color: var(--text-dim); line-height: 1.6;">Kickstart your digital journey with a no-obligation consultation. Let's discuss your vision and collaboratively chart the best path forward for your business.</p>
+            <div class="marquee-container">
+                <div class="marquee-track-left">
+                    <!-- Original Cards -->
+                    <div class="service-card wcu-card">
+                        <i class="fas fa-trophy fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>Leading IT Company</h3>
+                        <p style="margin-top: 10px; color: var(--text-dim); line-height: 1.6;">Recognized as the leading IT solutions provider in the region, delivering unparalleled digital services with a proven track record of client success and technological excellence.</p>
+                    </div>
+                    <div class="service-card wcu-card">
+                        <i class="fas fa-map-marked-alt fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>Location</h3>
+                        <p style="margin-top: 10px; color: var(--text-dim); line-height: 1.6;">Strategically situated across Pondicherry and Karaikal, ensuring accessible, responsive, and reliable local support for all your business needs.</p>
+                    </div>
+                    <div class="service-card wcu-card">
+                        <i class="fas fa-user-tie fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>Qualified Engineers</h3>
+                        <p style="margin-top: 10px; color: var(--text-dim); line-height: 1.6;">Our team comprises top-tier industry experts and passionate engineers dedicated to building robust, innovative, and future-proof digital solutions.</p>
+                    </div>
+                    <div class="service-card wcu-card">
+                        <i class="fas fa-hand-holding-usd fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>Custom Budget</h3>
+                        <p style="margin-top: 10px; color: var(--text-dim); line-height: 1.6;">We offer tailored, transparent pricing models designed to perfectly fit your unique business requirements without compromising on quality or performance.</p>
+                    </div>
+                    <div class="service-card wcu-card">
+                        <i class="fas fa-comments fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>Free Consultation</h3>
+                        <p style="margin-top: 10px; color: var(--text-dim); line-height: 1.6;">Kickstart your digital journey with a no-obligation consultation. Let's discuss your vision and collaboratively chart the best path forward for your business.</p>
+                    </div>
+                    <!-- Duplicated Cards for Infinite Scroll -->
+                    <div class="service-card wcu-card">
+                        <i class="fas fa-trophy fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>Leading IT Company</h3>
+                        <p style="margin-top: 10px; color: var(--text-dim); line-height: 1.6;">Recognized as the leading IT solutions provider in the region, delivering unparalleled digital services with a proven track record of client success and technological excellence.</p>
+                    </div>
+                    <div class="service-card wcu-card">
+                        <i class="fas fa-map-marked-alt fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>Location</h3>
+                        <p style="margin-top: 10px; color: var(--text-dim); line-height: 1.6;">Strategically situated across Pondicherry and Karaikal, ensuring accessible, responsive, and reliable local support for all your business needs.</p>
+                    </div>
+                    <div class="service-card wcu-card">
+                        <i class="fas fa-user-tie fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>Qualified Engineers</h3>
+                        <p style="margin-top: 10px; color: var(--text-dim); line-height: 1.6;">Our team comprises top-tier industry experts and passionate engineers dedicated to building robust, innovative, and future-proof digital solutions.</p>
+                    </div>
+                    <div class="service-card wcu-card">
+                        <i class="fas fa-hand-holding-usd fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>Custom Budget</h3>
+                        <p style="margin-top: 10px; color: var(--text-dim); line-height: 1.6;">We offer tailored, transparent pricing models designed to perfectly fit your unique business requirements without compromising on quality or performance.</p>
+                    </div>
+                    <div class="service-card wcu-card">
+                        <i class="fas fa-comments fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>Free Consultation</h3>
+                        <p style="margin-top: 10px; color: var(--text-dim); line-height: 1.6;">Kickstart your digital journey with a no-obligation consultation. Let's discuss your vision and collaboratively chart the best path forward for your business.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -81,48 +142,98 @@
 
     <section class="section-padding">
         <div class="container">
-            <div class="services-grid">
-                <div class="service-card" data-reveal>
-                    <i class="fas fa-mobile-alt fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
-                    <h3>Mobile Apps</h3>
-                    <p>Next-gen iOS & Android solutions.</p>
-                    <a href="contact.html?service=Mobile%20App%20Development" class="btn btn-outline" style="margin-top: 15px; width: 100%; text-align: center;">Inquire Now</a>
-                </div>
-                <div class="service-card" data-reveal>
-                    <i class="fas fa-code fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
-                    <h3>Web Dev</h3>
-                    <p>Scalable and secure web platforms.</p>
-                    <a href="contact.html?service=Web%20Development" class="btn btn-outline" style="margin-top: 15px; width: 100%; text-align: center;">Inquire Now</a>
-                </div>
-                <div class="service-card" data-reveal>
-                    <i class="fas fa-rocket fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
-                    <h3>SEO & AEO</h3>
-                    <p>Dominate search and AI answers.</p>
-                    <a href="contact.html?service=SEO%20and%20AEO" class="btn btn-outline" style="margin-top: 15px; width: 100%; text-align: center;">Inquire Now</a>
-                </div>
-                <div class="service-card" data-reveal>
-                    <i class="fas fa-robot fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
-                    <h3>AI Agent Dev</h3>
-                    <p>Intelligent, autonomous AI systems.</p>
-                    <a href="contact.html?service=AI%20Agent%20Development" class="btn btn-outline" style="margin-top: 15px; width: 100%; text-align: center;">Inquire Now</a>
-                </div>
-                <div class="service-card" data-reveal>
-                    <i class="fas fa-vr-cardboard fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
-                    <h3>AR/VR Dev</h3>
-                    <p>Immersive augmented & virtual realities.</p>
-                    <a href="contact.html?service=AR/VR%20Development" class="btn btn-outline" style="margin-top: 15px; width: 100%; text-align: center;">Inquire Now</a>
-                </div>
-                <div class="service-card" data-reveal>
-                    <i class="fas fa-cubes fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
-                    <h3>3D Modelling</h3>
-                    <p>High-quality 3D assets and environments.</p>
-                    <a href="contact.html?service=3D%20Modelling" class="btn btn-outline" style="margin-top: 15px; width: 100%; text-align: center;">Inquire Now</a>
-                </div>
-                <div class="service-card" data-reveal>
-                    <i class="fas fa-bullhorn fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
-                    <h3>Digital Marketing</h3>
-                    <p>Strategic social media and search campaigns.</p>
-                    <a href="contact.html?service=Digital%20Marketing" class="btn btn-outline" style="margin-top: 15px; width: 100%; text-align: center;">Inquire Now</a>
+            <div class="section-title" style="text-align: center; margin-bottom: 50px;">
+                <h2 class="text-gradient" data-reveal>Our Services</h2>
+                <p data-reveal>Comprehensive digital solutions tailored for your business.</p>
+            </div>
+            <div class="marquee-container">
+                <div class="marquee-track-right">
+                    <!-- Original Cards -->
+                    <div class="service-card wcu-card">
+                        <i class="fas fa-mobile-alt fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>Mobile Apps</h3>
+                        <p>Next-gen iOS & Android solutions.</p>
+                        <a href="contact.html?service=Mobile%20App%20Development" class="btn btn-outline" style="margin-top: 15px; width: 100%; text-align: center;">Inquire Now</a>
+                    </div>
+                    <div class="service-card wcu-card">
+                        <i class="fas fa-code fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>Web Dev</h3>
+                        <p>Scalable and secure web platforms.</p>
+                        <a href="contact.html?service=Web%20Development" class="btn btn-outline" style="margin-top: 15px; width: 100%; text-align: center;">Inquire Now</a>
+                    </div>
+                    <div class="service-card wcu-card">
+                        <i class="fas fa-rocket fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>SEO & AEO</h3>
+                        <p>Dominate search and AI answers.</p>
+                        <a href="contact.html?service=SEO%20and%20AEO" class="btn btn-outline" style="margin-top: 15px; width: 100%; text-align: center;">Inquire Now</a>
+                    </div>
+                    <div class="service-card wcu-card">
+                        <i class="fas fa-robot fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>AI Agent Dev</h3>
+                        <p>Intelligent, autonomous AI systems.</p>
+                        <a href="contact.html?service=AI%20Agent%20Development" class="btn btn-outline" style="margin-top: 15px; width: 100%; text-align: center;">Inquire Now</a>
+                    </div>
+                    <div class="service-card wcu-card">
+                        <i class="fas fa-vr-cardboard fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>AR/VR Dev</h3>
+                        <p>Immersive augmented & virtual realities.</p>
+                        <a href="contact.html?service=AR/VR%20Development" class="btn btn-outline" style="margin-top: 15px; width: 100%; text-align: center;">Inquire Now</a>
+                    </div>
+                    <div class="service-card wcu-card">
+                        <i class="fas fa-cubes fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>3D Modelling</h3>
+                        <p>High-quality 3D assets and environments.</p>
+                        <a href="contact.html?service=3D%20Modelling" class="btn btn-outline" style="margin-top: 15px; width: 100%; text-align: center;">Inquire Now</a>
+                    </div>
+                    <div class="service-card wcu-card">
+                        <i class="fas fa-bullhorn fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>Digital Marketing</h3>
+                        <p>Strategic social media and search campaigns.</p>
+                        <a href="contact.html?service=Digital%20Marketing" class="btn btn-outline" style="margin-top: 15px; width: 100%; text-align: center;">Inquire Now</a>
+                    </div>
+                    <!-- Duplicated Cards for Infinite Scroll -->
+                    <div class="service-card wcu-card">
+                        <i class="fas fa-mobile-alt fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>Mobile Apps</h3>
+                        <p>Next-gen iOS & Android solutions.</p>
+                        <a href="contact.html?service=Mobile%20App%20Development" class="btn btn-outline" style="margin-top: 15px; width: 100%; text-align: center;">Inquire Now</a>
+                    </div>
+                    <div class="service-card wcu-card">
+                        <i class="fas fa-code fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>Web Dev</h3>
+                        <p>Scalable and secure web platforms.</p>
+                        <a href="contact.html?service=Web%20Development" class="btn btn-outline" style="margin-top: 15px; width: 100%; text-align: center;">Inquire Now</a>
+                    </div>
+                    <div class="service-card wcu-card">
+                        <i class="fas fa-rocket fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>SEO & AEO</h3>
+                        <p>Dominate search and AI answers.</p>
+                        <a href="contact.html?service=SEO%20and%20AEO" class="btn btn-outline" style="margin-top: 15px; width: 100%; text-align: center;">Inquire Now</a>
+                    </div>
+                    <div class="service-card wcu-card">
+                        <i class="fas fa-robot fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>AI Agent Dev</h3>
+                        <p>Intelligent, autonomous AI systems.</p>
+                        <a href="contact.html?service=AI%20Agent%20Development" class="btn btn-outline" style="margin-top: 15px; width: 100%; text-align: center;">Inquire Now</a>
+                    </div>
+                    <div class="service-card wcu-card">
+                        <i class="fas fa-vr-cardboard fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>AR/VR Dev</h3>
+                        <p>Immersive augmented & virtual realities.</p>
+                        <a href="contact.html?service=AR/VR%20Development" class="btn btn-outline" style="margin-top: 15px; width: 100%; text-align: center;">Inquire Now</a>
+                    </div>
+                    <div class="service-card wcu-card">
+                        <i class="fas fa-cubes fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>3D Modelling</h3>
+                        <p>High-quality 3D assets and environments.</p>
+                        <a href="contact.html?service=3D%20Modelling" class="btn btn-outline" style="margin-top: 15px; width: 100%; text-align: center;">Inquire Now</a>
+                    </div>
+                    <div class="service-card wcu-card">
+                        <i class="fas fa-bullhorn fa-2x" style="color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>Digital Marketing</h3>
+                        <p>Strategic social media and search campaigns.</p>
+                        <a href="contact.html?service=Digital%20Marketing" class="btn btn-outline" style="margin-top: 15px; width: 100%; text-align: center;">Inquire Now</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -465,10 +576,10 @@
                     <p style="color: var(--text-dim); margin-top: 20px;"><i class="fas fa-envelope" style="color: var(--primary); margin-right: 10px;"></i> enlighttechz@gmail.com</p>
                     <p style="color: var(--text-dim); margin-top: 10px;"><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 10px;"></i> Karaikal, Puducherry.</p>
                     <div style="display: flex; gap: 15px; margin-top: 20px;">
-                        <a href="#" style="color: var(--text-dim); font-size: 1.2rem;"><i class="fab fa-instagram"></i></a>
-                        <a href="#" style="color: var(--text-dim); font-size: 1.2rem;"><i class="fab fa-facebook"></i></a>
-                        <a href="#" style="color: var(--text-dim); font-size: 1.2rem;"><i class="fab fa-youtube"></i></a>
-                        <a href="#" style="color: var(--text-dim); font-size: 1.2rem;"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/enlighttechz" style="color: var(--text-dim); font-size: 1.2rem;"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/enlighttechz" style="color: var(--text-dim); font-size: 1.2rem;"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/enlighttechz" style="color: var(--text-dim); font-size: 1.2rem;"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/enlighttechz" style="color: var(--text-dim); font-size: 1.2rem;"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
