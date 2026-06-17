@@ -163,6 +163,10 @@ const toggleChat = () => {
     const isHidden = getComputedStyle(chatWindow).display === 'none';
     chatWindow.style.display = isHidden ? 'flex' : 'none';
     if (isHidden && chatInput) chatInput.focus();
+    if (chatFab) {
+        if (isHidden) chatFab.classList.add('chat-open');
+        else chatFab.classList.remove('chat-open');
+    }
 };
 
 if (chatFab) chatFab.addEventListener('click', toggleChat);

@@ -495,7 +495,7 @@ footer a:hover {
     transition: var(--transition);
 }
 
-.chat-fab:hover {
+.chat-fab:not(.chat-open):hover {
     transform: scale(1.1) rotate(15deg);
 }
 
@@ -516,7 +516,7 @@ footer a:hover {
     color: var(--text-main);
 }
 
-.chat-fab:hover .chat-tooltip {
+.chat-fab:not(.chat-open):hover .chat-tooltip {
     opacity: 1;
     transform: translateX(0);
 }
